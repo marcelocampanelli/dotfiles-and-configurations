@@ -1,0 +1,121 @@
+# Make sure to modify "-Xms", "Xmx", "CICompilerCount", and "ParallelGCThreads" according to your PC hardware configuration...
+
+# -------------------------------------------
+# Memory Settings (High-Memory Workstation)
+# -------------------------------------------
+
+# Set the initial heap size (this reduces resizing overhead)
+-Xms2048m
+
+# Set the maximum heap size (adjust depending on your system; 2048m or 4096m is good for modern machines)
+-Xmx4096m
+
+# Set the reserved code cache size for JIT-compiled code (256m or 512m if you use many plugins)
+-XX:ReservedCodeCacheSize=512m
+
+# Adjust the maximum metaspace size (useful if you're running many plugins)
+-XX:MaxMetaspaceSize=512m
+
+# Young to Old Gen ratio — 33% young gen, 67% old gen (ideal for IDEs)
+-XX:NewRatio=2
+
+# Set initial and max size of the Young Generation
+-XX:NewSize=1024m
+-XX:MaxNewSize=1536m
+
+
+
+# ----------------------------------------------------
+# JIT Compiler Settings (Optimized For High-End CPUS)
+# ----------------------------------------------------
+
+# Use the HotSpot Server VM for maximum performance
+-server
+
+# Increase compiler threads (faster warm-up and compilation)
+-XX:CICompilerCount=8
+
+# Enable Tiered Compilation (starts with interpreter, then switches to compiled mode)
+-XX:+TieredCompilation
+
+
+
+# -------------------------------------------
+# Garbage Collection Tuning
+# -------------------------------------------
+
+# Enable parallel garbage collector for better performance on multi-core CPUs
+-XX:+UseParallelGC
+
+# Use up to 8 threads for parallel garbage collection
+-XX:ParallelGCThreads=4
+
+# Enable memory page pre-touching (faster memory access, reduces GC latency)
+-XX:+AlwaysPreTouch
+
+# Enable string deduplication (reduces heap usage)
+-XX:+UseStringDeduplication
+
+# Enable escape analysis (allocates more objects on stack vs heap)
+-XX:+DoEscapeAnalysis
+
+
+
+# --------------------------------------------------
+# Soft Reference Policy (Tweak Cache Eviction Rate)
+# --------------------------------------------------
+
+# Longer lifespan of SoftReferences (better IDE caching behavior)
+# For modern machines (16GB+ RAM), you can safely increase this to set it to `500` or even `1000`
+-XX:SoftRefLRUPolicyMSPerMB=500
+
+
+
+# -------------------------------------------
+# Jvm Behavior & Startup Tuning
+# -------------------------------------------
+
+# Skip class verification (faster startup, safe for production apps)
+-Xverify:none
+
+# Increase stack size per thread (safe buffer for plugin-heavy IDEs)
+-Xss2m
+
+# Use compressed pointers to save memory (enabled by default, safe to specify)
+-XX:+UseCompressedOops
+-XX:+UseCompressedClassPointers
+
+# Disable heap dump creation on OutOfMemoryError (avoid large .hprof files)
+-XX:-HeapDumpOnOutOfMemoryError
+
+# Prefer IPv4 over IPv6 for network connections (better compatibility)
+-Djava.net.preferIPv4Stack=true
+
+
+
+# -------------------------------------------
+# File Encoding (Avoid Encoding Issues)
+# -------------------------------------------
+
+# Set the file encoding to UTF-8 to avoid character issues
+-Dfile.encoding=UTF-8
+
+
+
+# -------------------------------------------
+# Control Auto-Updates
+# -------------------------------------------
+
+# Enable the following option if you want to disable updates or updates are managed by ToolBox
+#-Dide.no.platform.update=true
+
+
+
+# --------------------------------------------
+# Logging (Optional, Helpful For Diagnostics)
+# --------------------------------------------
+
+# Enable GC logging (optional - remove if unnecessary)
+#-XX:+PrintGCDetails
+#-XX:+PrintGCTimeStamps
+#-Xloggc:$USER_HOME\logs\webstorm\webstorm-gc.log

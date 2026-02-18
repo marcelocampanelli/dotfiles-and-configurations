@@ -1,0 +1,126 @@
+{
+  "window.commandCenter": true,
+  "explorer.compactFolders": false,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.4,
+  "terminal.integrated.fontSize": 14,
+  "editor.rulers": [80, 120, 160],
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorStyleInactive": "line",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "gitlens.ai.model": "gitkraken",
+  "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash",
+  "yaml.schemas": {
+    "file:///home/shadezimn/.cursor/extensions/atlassian.atlascode-4.0.10-universal/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.useTerminal": true,
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#dd0531"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#61dafb"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Svelte Orange",
+      "value": "#ff3d00"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ],
+  "docker.extension.enableComposeLanguageServer": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "cSpell.language": "en,pt,pt-BR",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.userWords": [
+    "alacritty",
+    "axios",
+    "browsermcp",
+    "cnpj",
+    "Cpfs",
+    "cpus",
+    "ctps",
+    "ginfor",
+    "jbuilder",
+    "kamal",
+    "mailhog",
+    "minicpm",
+    "modelcontextprotocol",
+    "ollama",
+    "openai",
+    "pipefy",
+    "pontotel",
+    "postgresql",
+    "propshaft",
+    "rubocop",
+    "sqlite",
+    "Talenses",
+    "vlow",
+    "Vlow",
+    "xpack",
+    "zoneinfo"
+  ],
+  "files.exclude": {
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "node_modules": true
+  },
+  "files.associations": {
+    ".env.*": "dotenv",
+    ".prettierrc": "json",
+    "*.css": "postcss",
+    ".dev.vars": "dotenv",
+    "*.ndjson": "jsonl"
+  },
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.multiCursorLimit": 50000,
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontLigatures.enabled": true
+}
