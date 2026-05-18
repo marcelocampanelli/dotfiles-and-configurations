@@ -1,4 +1,4 @@
-theme = Ayu
+theme = Cursor Dark
 font-family = "JetBrainsMono Nerd Font"
 font-size = 12
 cursor-style = underline
@@ -10,7 +10,9 @@ window-theme = system
 background-opacity = 0.95
 background-blur-radius = 20
 
+window-decoration = false
 
 shell-integration = zsh
 copy-on-select = true
 confirm-close-surface = false
+mouse-hide-while-typing = true
