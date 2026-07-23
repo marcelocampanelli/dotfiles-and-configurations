@@ -89,5 +89,8 @@
   "go.toolsManagement.autoUpdate": true,
   "workbench.colorTheme": "Tokyo Night",
   "go.testExplorer.alwaysRunBenchmarks": true,
-  "go.testFlags": ["-count=1"]
+  "go.testFlags": ["-count=1"],
+  "go.alternateTools": {
+    "go": "~/.local/share/mise/installs/go/latest/go/bin/go",
+  }
 }
