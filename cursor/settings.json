@@ -1,5 +1,10 @@
 {
-  "window.commandCenter": true,
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "Cursor Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "go.alternateTools": {
+    "go": "~/.local/share/mise/installs/go/latest/go/bin/go",
+  },
   "explorer.compactFolders": false,
   "editor.tabSize": 2,
   "editor.fontFamily": "JetBrainsMono Nerd Font",
@@ -9,88 +14,25 @@
   "editor.rulers": [80, 120, 160],
   "editor.fontLigatures": true,
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "editor.formatOnSave": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorStyleInactive": "line",
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[dockercompose]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "gitlens.ai.model": "gitkraken",
-  "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash",
-  "yaml.schemas": {
-    "file:///home/shadezimn/.cursor/extensions/atlassian.atlascode-4.0.10-universal/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
-  "docker.extension.enableComposeLanguageServer": false,
-  "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "files.exclude": {
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/.hg": true,
     "**/.svn": true,
-    "node_modules": true
+    "node_modules": true,
   },
-  "files.associations": {
-    ".env.*": "dotenv",
-    ".prettierrc": "json",
-    "*.css": "postcss",
-    ".dev.vars": "dotenv",
-    "*.ndjson": "jsonl",
-    "*.html.erb": "erb"
-  },
-  "javascript.suggest.autoImports": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
   "workbench.startupEditor": "newUntitledFile",
   "editor.multiCursorLimit": 50000,
-  "cursor.composer.shouldChimeAfterChatFinishes": true,
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "terminal.integrated.fontLigatures.enabled": true,
-  "[erb]": {
-    "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
-    "editor.formatOnSave": true
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "editor.formatOnSave": true,
-  "[ruby]": {
-    "editor.defaultFormatter": "Shopify.ruby-lsp"
-  },
   "rubyLsp.indexing": {
     "excludedPatterns": ["**/test/**/*.rb"],
     "includedPatterns": ["**/bin/**/*"],
     "excludedGems": ["rubocop", "rubocop-performance"],
-    "excludedMagicComments": ["compiled:true"]
+    "excludedMagicComments": ["compiled:true"],
   },
-  "claudeCode.preferredLocation": "panel",
-  "svelte.enable-ts-plugin": true,
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "window.autoDetectColorScheme": false,
-  "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "workbench.iconTheme": "material-icon-theme",
-  "cursor.general.reduceTransparency": true,
-  "rubyLsp.featureFlags": {},
-  "go.toolsManagement.autoUpdate": true,
-  "workbench.colorTheme": "Tokyo Night",
-  "go.testExplorer.alwaysRunBenchmarks": true,
   "go.testFlags": ["-count=1"],
-  "go.alternateTools": {
-    "go": "~/.local/share/mise/installs/go/latest/go/bin/go",
-  }
 }
