@@ -1,6 +1,6 @@
 {
   "window.autoDetectColorScheme": true,
-  "workbench.preferredLightColorTheme": "Cursor Dark",
+  "workbench.preferredLightColorTheme": "Nebula Aura Dark",
   "workbench.iconTheme": "material-icon-theme",
   "go.alternateTools": {
     "go": "~/.local/share/mise/installs/go/latest/go/bin/go",
@@ -35,4 +35,19 @@
     "excludedMagicComments": ["compiled:true"],
   },
   "go.testFlags": ["-count=1"],
+  "[erb]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp",
+  },
+  "explorer.confirmDelete": false,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "git.autofetch": true,
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "git.confirmSync": false
 }
